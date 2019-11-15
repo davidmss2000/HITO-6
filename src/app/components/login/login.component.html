@@ -2,10 +2,10 @@
 <div class="container text-center">
     <h1 class="m-5">Login</h1>
     <form (ngSubmit)="submitForm()">
-        <input type="email" class="form-control" name="email" [(ngModel)]="email" placeholder="Enter email">
-        <small id="emailError" class="form-text text-danger m-3"></small>
-        <input type="password" class="form-control" name="password" [(ngModel)]="password" placeholder="Enter password">
-        <small id="passwordError" class="form-text text-danger m-3"></small>
+        <input type="email" class="form-control m-3" name="email" [(ngModel)]="email" placeholder="Enter email">
+        <!--<small id="emailError" class="form-text text-danger m-3"></small>-->
+        <input type="password" class="form-control m-3" name="password" [(ngModel)]="password" placeholder="Enter password">
+        <!--<small id="passwordError" class="form-text text-danger m-3">{{emailError?.test}}</small>-->
         <button type="submit" class="btn btn-primary">Login</button>
     </form>
 </div>
